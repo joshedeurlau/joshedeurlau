@@ -28,7 +28,7 @@ An embedded access control system featuring a 4x4 matrix keypad input, automated
 ## ⚙️ Core Engineering Principles Implemented
 
 ### 1. Life Safety Fail-Safe (Software Interlock)
-The system shifts into a **Fail-Safe** emergency operation upon detecting water using the water sensor. The moment liquid is derected, the standard loop breaks, the entry keypad is physically locked out, and the system autonomously triggers an full opening loop of the door to prevent occupants inside from being trapped in a flooded zone.
+The system shifts into a **Fail-Safe** emergency operation upon detecting water using the water sensor. The moment liquid is detected, the standard loop breaks, the entry keypad is physically locked out, and the system autonomously triggers an full opening loop of the door to prevent occupants inside from being trapped in a flooded zone.
 
 # Fail-Safe Smart Access Control System with Emergency Hydro-Interlock
 
