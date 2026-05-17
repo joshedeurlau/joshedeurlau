@@ -8,7 +8,7 @@ An embedded access control system featuring a 4x4 matrix keypad input, automated
 | :---: | :---: | :---: |
 | ![Password Opening Door](assets/01_PasswordOpeningDoor.gif) | ![Emergency State](assets/02_EmergenceStateWhenLeak.gif) | ![Resetting Emergency State](assets/03_ResettingEmergencyState.gif) |
 
-## 🛠️ Technical Stack & Hardware Architecture
+## Technical Stack & Hardware Architecture
 * **Microcontroller:** Arduino Uno (ATmega328P)
 * **Driver ICs:** 74HC595 (8-bit Latched Shift Register), ULN2003 Darlington Transistor Array
 * **Actuator:** 28BYJ-48 Unipolar Stepper Motor (Configured for 4-step sequence)
@@ -31,7 +31,7 @@ An embedded access control system featuring a 4x4 matrix keypad input, automated
 
 ---
 
-## ⚙️ Core Engineering Principles Implemented
+## Core Engineering Principles Implemented
 
 ### 1. Life Safety Fail-Safe (Software Interlock)
 The system shifts into a **Fail-Safe** emergency operation upon detecting water using the water sensor. The moment liquid is detected, the standard loop breaks, the entry keypad is physically locked out, and the system autonomously triggers an full opening loop of the door to prevent occupants inside from being trapped in a flooded zone.
@@ -40,7 +40,7 @@ The system shifts into a **Fail-Safe** emergency operation upon detecting water 
 
 An embedded access control system featuring a 4x4 matrix keypad input, automated door actuation via a latched shift register, and a prioritized, active-low emergency escape routine triggered by environmental liquid detection.
 
-## 🛠️ Technical Stack & Hardware Architecture
+## Technical Stack & Hardware Architecture
 * **Microcontroller:** Arduino Uno (ATmega328P)
 * **Peripherals & Driver ICs:** 74HC595 (8-bit Latched Shift Register), ULN2003 Darlington Transistor Array
 * **Actuator:** 28BYJ-48 Unipolar Stepper Motor (Configured for 4-step sequence)
@@ -63,7 +63,7 @@ An embedded access control system featuring a 4x4 matrix keypad input, automated
 
 ---
 
-## ⚙️ Core Engineering Principles Implemented
+## Core Engineering Principles Implemented
 
 ### 1. Life Safety Fail-Safe (Software Interlock)
 In compliance with fundamental architectural safety standards (similar to NFPA 101 Life Safety guidelines), the system shifts into a **Fail-Safe** operational profile upon hazard detection. The moment liquid thresholds cross a calibrated limit (`ADC < 700`), the standard loop breaks, the entry keypad is physically locked out, and the system autonomously triggers an full opening loop to prevent occupants from being trapped in a flooded zone.
