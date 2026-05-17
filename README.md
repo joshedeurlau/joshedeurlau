@@ -38,21 +38,24 @@ The system shifts into a **Fail-Safe** operational profile upon hazard detection
 
 ### 2. Shift Register & Stepper Control
 Since there are not enough I/O pins on the microcontroller, the unipolar stepper motor coils along with the green LED are equenced using a 74HC595 8-bit Serial-In-Parallel-Out (SIPO) shift register, with the following sequence
-Bit:   Q7   Q6   Q5   Q4   Q3   Q2   Q1   Q0
+```text
+  Bit:   Q7   Q6   Q5   Q4   Q3   Q2   Q1   Q0
        [ X ][ X ][ X ][ L ][ M ][ M ][ M ][ M ]
                         |    |    |    |    |
-                        |    +----+----+----+---> [Bits 0-3] Stepper Motor Coils (Pin 15, 1, 2, 3)
+                        |    +----+----+----+---> [Bits 0-3] Stepper Motor Coils (Pins 15, 1, 2, 3)
                         +-----------------------> [Bit 4]  Status Green LED (Pin 4)
-* **Rotation of 90°:** The firmware executes a fixed 128-cycle iteration loop using a 4-step sequence array (`B00010001` to `B00011000`). This yields the step count required rotate the motor exactly 90-degrees to open the door.
-* **Default State after Emergency is Over:** To close the door again upon emergency clearance, the phase commutation steps are shown in reverse order, which drives the rotor back to its original position
+```
+* **Rotation of 90°:** The code executes a fixed 128-cycle iteration loop using a 4-step sequence array (`B00010001` to `B00011000`). This matches the step count required to rotate the motor exactly 90-degrees to open the door.
+* **Default State after Emergency is Over:** To close the door again after emergency clearance, the phase commutation steps are shown in reverse order, which drives the motor back to its original position
 * **Holding the Green LED ON** During the stationary open interval, we use B00010000 to completely de-energize the  motor coils while keeping the green LED latched high. This prevents overheating from the constant draw of current.
   
 ### 3. Active-Low Pull-Up Implementation
-The physical manual reset button utilizes internal Arduino UNO pull-up structures (`INPUT_PULLUP`). Pulling the pin high internally avoids floating-state electromagnetic interference (EMI). This ensures an inversion where a logic `LOW` indicates explicit human interaction.
+The physical manual reset button utilizes internal Arduino UNO pull-up structures (`INPUT_PULLUP`). Pulling the pin high internally avoids floating-state interference. This ensures the button press of a logic `LOW` indicates explicit human interaction.
 
 ##  Project Directory Structure
+```text
 ├── src/
-│   └── smart_access_control.ino   # Main embedded C++ loop logic
+│   └── Password_Protected_Door.ino                          # Main embedded C++ loop logic
 ├── hardware/
-│   └── schematics.pdf             # Wiring diagrams and I/O connections
-├── README.md                      # Project documentation and engineering report
+│   └── Hardware_Topview_74HC595 connections.pdf             # Wiring diagrams and I/O connections
+├── README.md                                                # Project documentation and engineering report
