@@ -2,6 +2,12 @@
 
 An embedded access control system featuring a 4x4 matrix keypad input, automated door control using a shift register, and a prioritized, emergency escape routine triggered by liquid detection of the water sensor.
 
+### System Demonstration
+
+| Password Opening Door | Emergency State When Leak is Detected | Resetting Emergency State |
+| :---: | :---: | :---: |
+| ![Password Opening Door](assets/01_PasswordOpeningDoor.gif) | ![Emergency State](assets/02_EmergenceStateWhenLeak.gif) | ![Resetting Emergency State](assets/03_ResettingEmergencyState.gif) |
+
 ## 🛠️ Technical Stack & Hardware Architecture
 * **Microcontroller:** Arduino Uno (ATmega328P)
 * **Driver ICs:** 74HC595 (8-bit Latched Shift Register), ULN2003 Darlington Transistor Array
