@@ -52,10 +52,16 @@ Since there are not enough I/O pins on the microcontroller, the unipolar stepper
 ### 3. Active-Low Pull-Up Implementation
 The physical manual reset button utilizes internal Arduino UNO pull-up structures (`INPUT_PULLUP`). Pulling the pin high internally avoids floating-state interference. This ensures the button press of a logic `LOW` indicates explicit human interaction.
 
+### Schematics
+The complete electrical logic design were mapped out using **AutoCAD Electrical**. 
+
+* [View Schematic PDF](hardware/AutoCAD_Electrical_Schematic.pdf)
+
 ##  Project Directory Structure
 ```text
 ├── src/
 │   └── Password_Protected_Door.ino                          # Main embedded C++ loop logic
 ├── hardware/
-│   └── Hardware_Topview_74HC595 connections.pdf             # Wiring diagrams and I/O connections
+│   └── Hardware_Topview_74HC595 connections.pdf             # Photos of Hardware and 74HC595 Shift Register connections
+│   └── AutoCAD_Electrical_Schematic.pdf                     # Wiring diagrams and I/O connections
 ├── README.md                                                # Project documentation and engineering report
