@@ -1,4 +1,4 @@
-# Hello, I'm Joshedeur Lau 
+# Hello! I'm Joshedeur Lau 
 
 I am a Year 3 Electrical and Computer Engineering student at The Chinese University of Hongkong, Shenzhen. I am actively focusing my career on industrial automation, PLCs, and control systems. I am passionate about learning more about automation through my homemade projects.
 
