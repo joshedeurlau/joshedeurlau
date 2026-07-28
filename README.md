@@ -8,7 +8,8 @@ I am a Year 3 Electrical and Computer Engineering student at The Chinese Univers
 *   **Interests:** Factory Automation
 
 ## Featured Project: Password Door with Emergency Water Detection
-**https://github.com/joshedeurlau/Water-Sensor-Password-Door**
+![Password Door Emergency Leak Demo](https://raw.githubusercontent.com/joshedeurlau/Water-Sensor-Password-Door/4d0ecc2adf46b0a7d32a7449e83d6a60ae103106/assets/02_EmergenceStateWhenLeak.gif)
+*   **[Automation Project](https://github.com/joshedeurlau/Water-Sensor-Password-Door):**
 My first homemade project, a password activated door that has goes into emergency shut down mode if water is detected 
 *   Uses an Arduino UNO, 4x4 Matrix Keypad, a 28BYJ-48 Stepper Motor, and a HW-038 Leak Sensor
 *   Water detection triggers the red LED while immediately overriding the password access to automatically open the door for     escape
