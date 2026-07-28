@@ -7,6 +7,8 @@ I am a Year 3 Electrical and Computer Engineering student at The Chinese Univers
 *   **Control Systems:** Hardware Logic, PLC Programming (Current Focus)
 *   **Interests:** Factory Automation
 
+**Current Focus:** Actively transitioning into automation roles and expanding my portfolio with a PLC simulation project to build hands-on factory control experience.
+
 ## Featured Project: Password Door with Emergency Water Detection
 <img src="https://raw.githubusercontent.com/joshedeurlau/Water-Sensor-Password-Door/4d0ecc2adf46b0a7d32a7449e83d6a60ae103106/assets/02_EmergenceStateWhenLeak.gif" width="400" alt="Password Door Emergency Leak Demo">
 
@@ -20,8 +22,6 @@ My first homemade project, a password activated door that has goes into emergenc
 
 *   **[MIDI Drum Sequencer](https://github.com/joshedeurlau/MIDI-Drum-Sequencer):** Made my own repeating drum pattern using an LED Matrix. Has adjustable Hi-hats, snare, and kick drums. Also has an erase/play feature, complete with sound. 
 
-## Current Focus
-I am actively transitioning into automation roles. I am currently expanding my portfolio with a PLC simulation project to build experience in factory settings.
 
 ## Let's Connect
 *   **LinkedIn:** [https://www.linkedin.com/in/joshedeur-lau/]
