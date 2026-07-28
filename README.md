@@ -7,7 +7,8 @@ I am a Year 3 Electrical and Computer Engineering student at The Chinese Univers
 *   **Control Systems:** Hardware Logic, PLC Programming (Current Focus)
 *   **Interests:** Factory Automation
 
-**Current Focus:** Actively transitioning into automation roles and expanding my portfolio with a PLC simulation project to build hands-on factory control experience.
+**Current Focus:** Actively transitioning into automation roles and expanding my portfolio with a PLC simulation project to build experience in a factory setting
+
 
 ## Featured Project: Password Door with Emergency Water Detection
 <img src="https://raw.githubusercontent.com/joshedeurlau/Water-Sensor-Password-Door/4d0ecc2adf46b0a7d32a7449e83d6a60ae103106/assets/02_EmergenceStateWhenLeak.gif" width="400" alt="Password Door Emergency Leak Demo">
